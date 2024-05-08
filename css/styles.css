@@ -167,10 +167,17 @@ margin-right: 2rem;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+  outline: 0;
 }
 .btn--block{
     display: inline-block;
     width: 100%;
+}
+.btn .icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    transform: translateY(5px);
 }
 .btn--streched{
     padding-left: 6rem;
@@ -211,7 +218,7 @@ margin-right: 2rem;
 /* inputs */
 
 .input{
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
      outline: 0;
     border: 1px solid #ccc; 
     border-radius: var(--border-radius);
@@ -235,9 +242,7 @@ margin-right: 2rem;
 .input-group .btn{
     margin: 4px;
 }
-.input--shadow{
-    box-shadow: 0 0 30px #e8ecef;
-}
+
 
 @media screen and (min-width:1024px) {
     .input{
@@ -573,5 +578,23 @@ transition: transform .3s;
     .hero__content{
         text-align: left;
         align-self: center;
+    }
+}
+/* Domain Block */
+.block-domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem 0;
+}
+.block-domain__price{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,6rem);
+    font-weight: 600;
+    justify-items: center;
+}
+@media screen and (min-width:768px) {
+    .block-domain__price{
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
     }
 }

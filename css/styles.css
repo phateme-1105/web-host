@@ -614,6 +614,26 @@ transition: transform .3s;
 /* plans block */
  .block-plans .grid{
     gap: 6rem 4rem;
-    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+/* features  */
+.feature{
+    gap:5rem 1rem;
+    margin: 12rem 0;
+}
+.feature:first-of-type{
+    margin-top: 6rem;
+}
+.feature__image{
+    width: 100%;
+}
+.feature__heading{
+    margin-top:1rem ;
 }
 
+@media screen and (min-width:768px) {
+    .feature:nth-of-type(even) .feature__content{
+        order: 2;
+    }
+}

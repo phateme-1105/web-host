@@ -17,7 +17,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: inter,Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif ;
     font-size: 2.4rem;
     line-height: 1.5;
     color: var(--color-body);
@@ -203,7 +203,7 @@ margin-right: 2rem;
 .btn--outline {
     background-color: #fff;
     color: var(--color-headings);
-    transition: background-color 0.15s , color 0.15s;
+   border: 2px solid var(--color-headings);
 }
 .btn--outline:hover{
     background-color: var(--color-headings);
@@ -549,7 +549,7 @@ transition: transform .3s;
 }
 .nav__toggler{
     opacity: 0.4;
-    transition: box-shadow .15s ;
+    transition: box-shadow 0.15s ;
     cursor: pointer;
 }
 .nav.collapsible--expanded .nav__toggler{
